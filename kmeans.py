@@ -2,9 +2,7 @@ import math
 import random
 from typing import List, Tuple
 
-
-def euclidean_distance(p1: List[float], p2: List[float]) -> float:
-    return math.sqrt(sum((a - b) ** 2 for a, b in zip(p1, p2)))
+from utils import euclidean_distance
 
 
 def initialize_centroids(points: List[List[float]], k: int) -> List[List[float]]:
